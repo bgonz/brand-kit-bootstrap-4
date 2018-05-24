@@ -14,9 +14,9 @@
   <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar bg-primary sticky-top">
     <div class="d-none d-md-inline-block"><p class="mb-0 text-light">Located in Historic Downtown Gresham OR</p></div>
     <nav class="navbar-nav flex-row ml-md-auto d-flex">
-      <button class="nav-item btn btn-sm btn-outline-light">Hours</button>
-      <button class="nav-item btn btn-sm btn-outline-light ml-2">Location</button>
-      <button class="nav-item btn btn-sm btn-outline-light ml-2">Menu</button>
+      <a class="nav-item btn btn-sm btn-outline-light text-light" href="#join-us">Hours</a>
+      <a class="nav-item btn btn-sm btn-outline-light ml-2 text-light" target="_blank" href="https://www.google.com/maps/place/Sweet+Betty's+Bistro/@45.5039603,-122.4309553,15z/data=!4m13!1m7!3m6!1s0x5495988a5ec4725b:0xe277e7221fdae9d0!2s1000+N+Main+Ave,+Gresham,+OR+97030!3b1!8m2!3d45.5039412!4d-122.4307487!3m4!1s0x5495988a69d6b181:0xc4d754ecd50c0953!8m2!3d45.5039412!4d-122.4307487">Location</a>
+      <a class="nav-item btn btn-sm btn-outline-light ml-2 text-light" target="_blank" href="images/sweet-bettys-menu-2017-OPT.pdf">Menu</a>
     </nav>
   </header>
 
@@ -32,7 +32,7 @@
     <div class="seperator blue"></div>
     <img data-src="images/family-dining.jpg" class="lazyload full-width-image">
 
-    <section class="focus-info">
+    <section id="join-us" class="focus-info">
       <div class="container">
         <div class="row">
           <div class="col-md-6 text-center">
@@ -71,7 +71,7 @@
                     <li>Sandwhiches Burgers/More</li>
                     <li>Soups / Salads</li>
                   </ul>
-                  <a class="btn btn-secondary text-uppercase mt-4 mt-md-2 mb-5" target="_blank" href="#">View Full Menu</a>
+                  <a class="btn btn-secondary text-uppercase mt-4 mt-md-2 mb-5" target="_blank" href="images/sweet-bettys-menu-2017-OPT.pdf">View Full Menu</a>
             </div>
           </div>
         </div>
@@ -81,10 +81,12 @@
     <img data-src="images/almost-famous-bloody-mary.jpg" class="lazyload full-width-image">
     <div class="seperator blue"></div>
 
-    <section id="drinks" class="d-flex">
-      <div id="drinks__left" class="text-right"><img data-src="images/drinks-left.png" class="lazyload full-width-image"></div>
-      <div id="drinks__middle" class="d-none d-md-inline-block"><img data-src="images/drinks-middle.png" class="lazyload full-width-image"></div>
-      <div id="drinks__right" class="text-left"><img data-src="images/drinks-right.png" class="lazyload full-width-image"></div>
+    <section id="drinks">
+      <div class="drink-wrapper d-flex">
+          <div id="drinks__left" class="text-right"><img data-src="images/drinks-1.png" class="lazyload"></div>
+          <div id="drinks__middle" class="d-none d-md-inline-block"><img data-src="images/drinks-2.png" class="lazyload"></div>
+          <div id="drinks__right" class="text-left"><img data-src="images/drinks-3.png" class="lazyload"></div>
+      </div>
     </section>
 
   </main>

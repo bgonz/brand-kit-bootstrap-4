@@ -1,5 +1,12 @@
 // Add additional styles here. For example, overwrite certain styles or add new components.
 // Tip: You can use bootstrap's powerful mixins here!
+header {
+    .nav-item.text-light {
+        &:hover, &:active {
+            color: $primary!important;
+        }
+    }
+}
 
 // INTRO
 #intro {
@@ -119,22 +126,32 @@
 }
 
 // DRINKS
-#drinks__left {
-    width: 50%;
-    background-color: $secondary;
+#drinks {
+    background: linear-gradient(to right, $secondary 0%, $secondary 50%, $primary 50%, $primary 100%);
+}
+
+.drink-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
     img {
-        max-width: 378px;
-        max-height:645px;
+        height: auto;
+        width: 100%;
+    }
+}
+
+#drinks__left {
+    width: 53.36%;
+    @include media-breakpoint-up(md) {
+        width: 32.28%;
     }
 }
 #drinks__middle {
-
+    width: 39.64%;
 }
 #drinks__right {
-    width: 50%;
-    background-color: $primary;
-    img {
-        max-width: 378px;
-        max-height:645px;
+    width: 46.64%;
+    @include media-breakpoint-up(md) {
+        width: 28.21%;
     }
 }
+
