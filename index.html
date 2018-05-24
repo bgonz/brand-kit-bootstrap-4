@@ -11,49 +11,91 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-          data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03"
-          aria-expanded="false"
-          aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <a class="navbar-brand" href="#!">Navbar</a>
+  <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar bg-primary sticky-top">
+    <div class="d-none d-md-inline-block"><p class="mb-0 text-light">Located in Historic Downtown Gresham OR</p></div>
+    <nav class="navbar-nav flex-row ml-md-auto d-flex">
+      <button class="nav-item btn btn-sm btn-outline-light">Hours</button>
+      <button class="nav-item btn btn-sm btn-outline-light ml-2">Location</button>
+      <button class="nav-item btn btn-sm btn-outline-light ml-2">Menu</button>
+    </nav>
+  </header>
 
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-    <ul class="navbar-nav mr-auto mt-2 mt-md-0">
-      <li class="nav-item active">
-        <a class="nav-link" href="#!">Home
-          <span class="sr-only">(current)</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#!">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#!">Disabled</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search">
-    </form>
-  </div>
-</nav>
+  <main>
+    <section id="intro">
+      <div class="container">
+          <img id="logo_lips" data-src="images/logo-lockup-lips.png" class="lazyload">
+          <img id="words_intro" src="images/logo-lockup-lips_lqip.png" data-src="images/breakfast-lunch-drinks.png" class="lazyload d-none d-lg-block">
+          <a id="facebook_link" href="https://www.facebook.com/sweetbetty1000" target="_blank" title="Click here to visit us on Sweet Betty's Bistro Gresham on Facebook" alt="Sweet Betty's Bistro of Gresham Facebook Link"><img src="images/facebook-button.png"></a>
+      </div>
+    </section>
 
-<div class="container-fluid">
-  <div class="row mt-3">
-    <div class="col-lg-3 col-md-6">
-      <!--Body text-->
-      <p>Welcome to Bootstrap 4</p>
-    </div>
-  </div>
-</div>
+    <div class="seperator blue"></div>
+    <img data-src="images/family-dining.jpg" class="lazyload full-width-image">
+
+    <section class="focus-info">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center">
+              <h2 id="words_joinUs" class="text-hide fontastic mb-4 mb-md-2">Join Us</h2>
+              <h5 class="font-weight-bold mb-0">Everyday</h5>
+              <p style="font-size: 1.2rem;">Open 8am - 3pm</p>
+              <h5 class="font-weight-bold mb-0">Historic Downtown Gresham</h5>
+              <p style="font-size: 1.2rem;">1000 N Main Ave,<br>Gresham, OR 97030</p>
+              <a class="btn btn-secondary text-uppercase mt-4 mt-md-2 mb-5" target="_blank" href="https://www.google.com/maps/place/Sweet+Betty's+Bistro/@45.5039603,-122.4309553,15z/data=!4m13!1m7!3m6!1s0x5495988a5ec4725b:0xe277e7221fdae9d0!2s1000+N+Main+Ave,+Gresham,+OR+97030!3b1!8m2!3d45.5039412!4d-122.4307487!3m4!1s0x5495988a69d6b181:0xc4d754ecd50c0953!8m2!3d45.5039412!4d-122.4307487">View Map</a>
+          </div>
+          <div class="col-md-6">
+              <span class="d-block pt-md-4"></span>
+              <p class="text-justify pt-md-5">Sweet Betty's is Gresham's favorite family friendly Breakfast and Lunch spot! We serve breakfast all day and have the best breakfast specials in town. The patio offers a perfect place to soak up some sunshine while eating with friends.  Our daily specials are amazing and we happen to have the best crepes in town!  Come for the food, stay for the fun.</p>
+              <p style="font-size: 1.2rem;"><span class="text-primary clearfix">Orders to Go Call:</span>503-665-5052</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="seperator pink"></div>
+    <img data-src="images/gresham-breakfast.jpg" class="lazyload full-width-image">
+
+    <section class="focus-info">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 text-center">
+                <h2 id="words_menu" class="text-hide fontastic mb-4 mb-md-2">Menu</h2>
+                <img data-src="images/menus.png" class="lazyload img-fluid">
+            </div>
+            <div class="col-md-6 text-center">
+                <span class="d-block pt-md-4"></span>
+                <ul class="pt-md-5 text-primary font-weight-bold list-unstyled" style="font-size: 1.2rem;">
+                    <li>Betty’s Classic Breakfast</li>
+                    <li>From the Griddle</li>
+                    <li>Light Eaters</li>
+                    <li>Sandwhiches Burgers/More</li>
+                    <li>Soups / Salads</li>
+                  </ul>
+                  <a class="btn btn-secondary text-uppercase mt-4 mt-md-2 mb-5" target="_blank" href="#">View Full Menu</a>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    
+    <img data-src="images/almost-famous-bloody-mary.jpg" class="lazyload full-width-image">
+    <div class="seperator blue"></div>
+
+    <section id="drinks" class="d-flex">
+      <div id="drinks__left" class="text-right"><img data-src="images/drinks-left.png" class="lazyload full-width-image"></div>
+      <div id="drinks__middle" class="d-none d-md-inline-block"><img data-src="images/drinks-middle.png" class="lazyload full-width-image"></div>
+      <div id="drinks__right" class="text-left"><img data-src="images/drinks-right.png" class="lazyload full-width-image"></div>
+    </section>
+
+  </main>
+
+      
+
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="javascripts/fastclick/lib/fastclick.js"></script>
 
 <script src="javascripts/lazysizes/lazysizes.min.js"></script>
 <script src="javascripts/lazysizes/plugins/unveilhooks/ls.unveilhooks.min.js"></script>

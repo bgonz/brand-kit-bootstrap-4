@@ -1,11 +1,3 @@
-// To instantiate FastClick on the body, which is the recommended method of use:
-if ('addEventListener' in document) {
-    document.addEventListener('DOMContentLoaded', function() {
-        FastClick.attach(document.body);
-        console.log('Fastclick loaded.')
-    }, false);
-}
-
 window.onload = () => {
 
     let domReady = setTimeout(() => {

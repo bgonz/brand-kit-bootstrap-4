@@ -1,13 +1,140 @@
 // Add additional styles here. For example, overwrite certain styles or add new components.
 // Tip: You can use bootstrap's powerful mixins here!
 
+// INTRO
+#intro {
+    height: calc(100vh - 147px);
+    background-image: url('../images/intro-bg-sm.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include media-breakpoint-up(md) {
+        background-image: url('../images/intro-bg-lg.jpg');
+    }
+    @include media-breakpoint-up(xl) {
+        background-size: auto;
+        background-position: center top;
+    }
+    .container {
+        position: relative;
+        height: 100%;
+    }
+}
+// Logo
+#logo_lips {
+    max-width: 80%;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    @include media-breakpoint-down(md) {
+        transform: translateX(-50%);
+    }
+    @include media-breakpoint-up(lg) {
+        width: auto;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+// Facebook Link
+#facebook_link {
+    width: 150px;
+    position: absolute;
+    @include media-breakpoint-down(md) {
+        transform: translateX(-50%);
+        bottom: 10px;
+        left: 50%;
+    }
+    @include media-breakpoint-up(lg) {
+        width: 200px;
+        top: 60%;
+        left: 550px;
+        transform: translateX(-50%);
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
 
-//.alert-myalert {
-//  @include alert-variant(#60667d, #1d1d1d, #f4fdff);
-//}
+// Intro Words
+#words_intro {
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
 
-//@each $color, $value in $theme-colors {
-//  .alert-#{$color} {
-//    box-shadow: 3px 3px theme-color-level($color, -3);
-//  }
-//}
+// Seperator
+.seperator {
+    //height: 58px;
+    height: 25px;
+    width: 100%;
+    background-size: 21px 25px;
+    background-repeat: repeat-x;
+    display: block;
+    @include media-breakpoint-up(lg) {
+        background-size: 30px 36px;
+        height: 36px;
+    }
+    &.blue {
+        background-image: url('../images/seperator-repeat-blue.png');
+    }
+    &.pink {
+        background-image: url('../images/seperator-repeat-pink.png');
+    }
+}
+
+// Full Width Images
+.full-width-image {
+    width: 100%;
+    height: auto;
+}
+
+// Content Sections
+.focus-info {
+    padding: 50px 30px;
+}
+
+// Words
+.fontastic  {
+    height: 50px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    margin-bottom: 40px;
+    @include media-breakpoint-up(md) {
+        height: 60px;
+    }
+}
+
+#words_joinUs {
+    background-image: url('../images/words_join-us.png');
+    background-size: 211px 50px;
+}
+
+#words_menu {
+    background-image: url('../images/words_menu.png');
+    background-size: 157px 50px;
+}
+
+// DRINKS
+#drinks__left {
+    width: 50%;
+    background-color: $secondary;
+    img {
+        max-width: 378px;
+        max-height:645px;
+    }
+}
+#drinks__middle {
+
+}
+#drinks__right {
+    width: 50%;
+    background-color: $primary;
+    img {
+        max-width: 378px;
+        max-height:645px;
+    }
+}

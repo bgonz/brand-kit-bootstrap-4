@@ -267,14 +267,6 @@ var _modalButtons = function _modalButtons() {
 };
 'use strict';
 
-// To instantiate FastClick on the body, which is the recommended method of use:
-if ('addEventListener' in document) {
-    document.addEventListener('DOMContentLoaded', function () {
-        FastClick.attach(document.body);
-        console.log('Fastclick loaded.');
-    }, false);
-}
-
 window.onload = function () {
 
     var domReady = setTimeout(function () {
